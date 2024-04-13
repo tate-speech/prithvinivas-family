@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Family Website</title>
+</head>
+<style>
+	.button{
+		cursor: pointer;
+		font-weight: bold;
+		text-align: center;
+		height: 55px;
+		width: 100px;
+		font-size: 26px;
+		border-color: red;
+		color: darkblue;
+	}
+	.text{
+		font-weight: bold;
+		border-color: cyan;
+		height: 100px;
+		width: 400px;
+		align-items: center;
+		font-size: 60px;
+	}
+	.head{
+		font-weight: bold;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 40px;
+		cursor: default;
+	}
+	   @media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+}
+@media (max-width: 576px) {
+  /* Styles for screens smaller than 576px */
+}
+</style>
+<script>
+	function submit() {
+		var search;
+
+		search = document.getElementById("search").value;
+
+		if(search == "chinnu"){
+			window.open("chinnu.html")
+		}else if(search == "dodapa"){
+			window.open("dodapa.html")
+		}else if(search == "ravindra"){
+			window.open("father.html")
+		}else if(search == "dodama"){
+			alert('You Have To type vanita or vinoda')
+		}else if(search == "vanita"){
+			window.open("dodamaone.html")
+		}else if(search == "vinoda"){
+			window.open("dodamatwo.html")
+		}else if(search == "swapna"){
+			window.open("mother.html")
+		}else if(search == "dhyan"){
+			window.open("dhyan.html")
+		}else if(search == "chinu"){
+			alert('sorry You have to search from "chinnu"')
+		}else if(search == ""){
+			alert("You didnt even typed the name!")
+		}else if(search == "padmanaban"){
+			alert("You Have to Search dodapa")
+		}else if(search == "padmanaba"){
+			alert("You Have to Search dodapa")
+		}else{
+			alert("There Is No Search From " + search + " If you Want to Add " + search + " Please Contact Dhyan")
+		}
+	}
+</script>
+<body>
+	<p style="color: red;">*Note: This Website will Look Better in Computer or Desktop mode</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p class="head" title="A website created by Dhyan For its Family">Search Dhyan's Family And Get a Photo Of It!</p>
+	<br>
+	<br>
+	<br>
+<center>
+	<input type="text" placeholder="type the name" name="Type your Search" id="search" class="text">
+	<br>
+	<br>
+	<input type="submit" value="Search" onclick="submit()" class="button">
+</center>
+<br>
+<br>
+
+<b style="color: red;">*There More Family Members To Be Added This Website Will Update By Dhyan By adding More Members</b>
+</body>
+</html>
